@@ -13,11 +13,11 @@ import static org.slf4j.LoggerFactory.getLogger;
 public class Calculator {
     private static final Logger log = getLogger(Calculator.class);
 
-    private final BiFunction<Double, Double, Double> add = (a, b) -> a + b;
-    private final BiFunction<Double, Double, Double> substract = (a, b) -> a - b;
-    private final BiFunction<Double, Double, Double> multiple = (a, b) -> a * b;
-    private final BiFunction<Double, Double, Double> div = (a, b) -> a / b;
-    private double result = 0;
+    private static final BiFunction<Double, Double, Double> add = (a, b) -> a + b;
+    private static final BiFunction<Double, Double, Double> substract = (a, b) -> a - b;
+    private static final BiFunction<Double, Double, Double> multiple = (a, b) -> a * b;
+    private static final BiFunction<Double, Double, Double> div = (a, b) -> a / b;
+    private static double result = 0;
 
     public double getResult() {
         return result;
